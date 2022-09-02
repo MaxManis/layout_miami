@@ -2,11 +2,19 @@
 
 .testimonial {
 
+  &__item {
+    display: block;
+    text-decoration: none;
+
+    transition: transform $transition-duration;
+
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+
   &__img-box {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 24px;
 
     margin-bottom: 28px;
 
@@ -17,35 +25,40 @@
   &__img {
     grid-column: 2 / 4;
     width: 100%;
-    max-width: 170px;
+    max-width: 400px;
+
+    @include onDesktop {
+      max-width: max-content;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    justify-content: start;
+    align-content: start;
+    //text-align: center;
   }
   &__name {
     text-decoration: none;
-    color: $blue-color;
+    color: $color-white;
     font-weight: 700;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 140%;
 
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
-  &__role {
-    font-size: 14px;
-    line-height: 27px;
-    color: $tracperant-text;
-
-    margin-bottom: 13px;
+  &__price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: $color-white;
   }
   &__phrase {
     font-size: 16px;
-    line-height: 27px;
-    color: $regular-text-color;
+    line-height: 140%;
+    color: $color-white;
+
+    margin-bottom: 16px;
   }
 }

@@ -3,7 +3,7 @@
 .nav {
   display: block;
   height: 100vh;
-  background-color: $blue-color;
+  background-color: $grey-color;
 
   transition: transform $transition-duration;
   transition-timing-function: ease;
@@ -17,10 +17,10 @@
 
     //CONTAINER MIXIN:
     @include container;
-    padding: 24px 20px;
+    padding: 30px 20px;
 
     @include onDesktop {
-      padding: 24px 40px;
+      padding: 36px 40px;
     }
   }
 
@@ -40,7 +40,7 @@
   &__link {
     text-decoration: none;
     text-transform: uppercase;
-    color: $color-white;
+    color: $main-bg-color;
 
     letter-spacing: 2px;
     font-weight: 700;
@@ -52,7 +52,7 @@
     transition: border-color $transition-duration;
 
     &:hover {
-      border-color: $color-white;
+      border-color: $main-bg-color;
     }
   }
 
@@ -69,7 +69,7 @@
     padding-bottom: 8px;
     margin-bottom: 8px;
 
-    color: $color-white;
+    color: $main-bg-color;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -83,12 +83,12 @@
       bottom: -140%;
       left: 0;
       width: max-content;
-      border-bottom: 1px solid $color-white;
+      border-bottom: 1px solid $main-bg-color;
       padding-bottom: 8px;
     }
 
     &--border {
-      border-bottom: 1px solid $color-white;
+      border-bottom: 1px solid $main-bg-color;
     }
   }
 }

@@ -4,22 +4,23 @@
 
   &__value-name {
     font-size: 14px;
-    line-height: 27px;
-    color: $tracperant-text;
+    line-height: 140%;
+    color: $color-white;
 
     margin-bottom: 8px;
   }
   &__value {
     display: inline-block;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 27px;
-    color: $regular-text-color;
+    line-height: 140%;
+    color: $color-white;
 
     margin-bottom: 24px;
 
     transition: color $transition-duration;
 
-    @include hover(color, $blue-color);
+    @include hover(color, $light-yellow-color);
   }
   &__input {
     box-sizing: border-box;
@@ -34,7 +35,7 @@
     color: $color-black;
     background-color: $form-bg;
 
-    border-radius: 8px;
+    border-radius: 40px;
     border: 2px solid transparent;
 
     transition: border-color $transition-duration;
@@ -64,7 +65,7 @@
     background-color: $form-bg;
 
     border: 2px solid transparent;
-    border-radius: 8px;
+    border-radius: 16px;
 
     resize: none;
 
