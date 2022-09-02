@@ -25,6 +25,7 @@
 
   &--primary {
     width: 100%;
+    max-width: $input-max-width;
 
     color: $main-bg-color;
 
@@ -61,11 +62,16 @@
     }
   }
   &--to-top {
-    position: fixed;
-    right: 40px;
-    bottom: 50px;
-    @include icon-square(50px);
+    display: none;
 
-    background: $color-white;
+    @include onDesktop {
+      display: inherit;
+      position: fixed;
+      right: 40px;
+      bottom: 50px;
+      @include icon-square(50px);
+
+      background: $color-white;
+    }
   }
 }

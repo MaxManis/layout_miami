@@ -36,4 +36,14 @@
     justify-items: center;
     align-items: center;
   }
+
+  &--mobile--center {
+    display: flex;
+    justify-content: center;
+
+    @include onDesktop {
+      display: inherit;
+      justify-content: inherit;
+    }
+  }
 }

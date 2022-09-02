@@ -27,34 +27,18 @@
   }
 
   &__title {
-    width: max-content;
-
+    display: table;
     font-weight: 500;
     font-size: 64px;
     line-height: 100%;
     letter-spacing: -1.5px;
     color: $color-white;
-    align-self: center;
     margin: 0 auto 48px;
 
     &--contacts {
       font-weight: 700;
       font-size: 48px;
     }
-
-    //crown icon
-    //&::after {
-    //  content: "";
-    //  @include icon-square(24px);
-    //
-    //  margin: 0 auto 32px;
-    //
-    //  display: block;
-    //  background-image: url("../images/crown.svg");
-    //  background-repeat: no-repeat;
-    //  background-size: contain;
-    //  background-position: center;
-    //}
   }
 
   &__section {
