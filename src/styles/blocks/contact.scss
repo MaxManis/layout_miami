@@ -43,13 +43,15 @@
 
     margin-bottom: 16px;
     padding: 14px 17px;
+
+    font-family: inherit;
     font-size: 14px;
     line-height: 20px;
-    color: $color-black;
+    color: $input-font-color;
     background-color: $form-bg;
 
     border-radius: 40px;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
 
     transition: border-color $transition-duration;
 
@@ -63,7 +65,7 @@
       border-color: $placeholder-font-color;
     }
     &:focus {
-      border-color: $blue-color;
+      border-color: $red-color;
     }
   }
   &__comment {
@@ -73,12 +75,13 @@
     padding: 14px 17px;
     margin-bottom: 32px;
 
+    font-family: inherit;
     font-size: 14px;
     line-height: 20px;
     color: $color-black;
     background-color: $form-bg;
 
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 16px;
 
     resize: none;
@@ -95,7 +98,7 @@
       border-color: $placeholder-font-color;
     }
     &:focus {
-      border-color: $blue-color;
+      border-color: $red-color;
     }
   }
 }

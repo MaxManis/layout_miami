@@ -12,9 +12,7 @@ $checkbox-target: ".page__nav";
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
 
     height: 100vh;
 
@@ -32,28 +30,24 @@ $checkbox-target: ".page__nav";
   }
 
   &__title {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
     color: $main-bg-color;
     font-weight: 700;
+    font-size: 36px;
     letter-spacing: -1.5px;
-    font-size: 80px;
     line-height: 100%;
 
-    margin: 0 auto 20%;
-
-    //&::before {
-    //  content: "";
-    //  display: block;
-    //  height: 2px;
-    //  width: 40px;
-    //  background-color: $color-white;
-    //
-    //  margin-bottom: 24px;
-    //}
+    @include onTablet {
+      font-size: 64px;
+    }
 
     @include onDesktop {
-      letter-spacing: -1.5px;
       font-size: 80px;
-      line-height: 80px;
     }
   }
   /* stylelint-disable */

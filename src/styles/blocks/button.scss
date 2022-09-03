@@ -43,35 +43,14 @@
     }
   }
 
-  &--secondary {
-    width: 100%;
-    color: $blue-color;
-
-    background-color: transparent;
-    border: 2px solid $blue-color;
-
-    &:hover {
-      color: $color-white;
-      background: $hover-blue-color;
-      box-shadow: $button-hover-shadow;
-      border-color: transparent;
-    }
-    &:active {
-      box-shadow: $button-active-shadow;
-      transform: scale(0.9);
-    }
-  }
   &--to-top {
-    display: none;
+    z-index: 5;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    @include icon-square(50px);
 
-    @include onDesktop {
-      display: inherit;
-      position: fixed;
-      right: 40px;
-      bottom: 50px;
-      @include icon-square(50px);
+    background: $color-white;
 
-      background: $color-white;
-    }
   }
 }
